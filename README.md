@@ -34,29 +34,29 @@ git clone https://https://github.com/itarog/Can-crystalline-polymorphism-be-pred
 
 ### Feature set 1
 
-14 total features.
-229,748 molecules.
+14 total features. \\
+229,748 molecules. \\
 2.02% polymorphic molecules. \\
 File path: main/database_files/features_1_df.ftr
 
 ### Feature set 2
 
-14 total features.
-126,748 molecules.
+22 total features. \\
+126,748 molecules. \\
 2.48% polymorphic molecules. \\
 File path: main/database_files/features_2_df.ftr
 
 ### Feature set 3
 
-14 total features.
-126,608 molecules.
+738 total features. \\
+126,608 molecules. \\
 2.48% polymorphic molecules. \\
 File path: main/database_files/features_3_df.ftr
 
 ### Feature set 4
 
-14 total features.
-7,231 molecules.
+765 total features. \\
+7,231 molecules. \\
 37.07% polymorphic molecules. \\
 File path: main/database_files/features_4_df.ftr
 
@@ -224,8 +224,4 @@ radar_plotter = RadarPlotter(metrics)
 radar_plotter.gen_plot_by_eval_method(pu_os_algo_full_summary_dict, eval_method) 
 ```
 
-### Water-filled plots
-
-```
-Write me.
-```
+### TBD - ESI calculations

@@ -25,7 +25,7 @@ The repository includes:
 ## 📂 Installing
 
 ```
-pip install bassa-reg
+git clone https://https://github.com/itarog/Can-crystalline-polymorphism-be-predicted-from-single-molecule-properties-
 ```
 
 ---
@@ -36,25 +36,29 @@ pip install bassa-reg
 
 14 total features.
 229,748 molecules.
-2.02% polymorphic molecules.
+2.02% polymorphic molecules. \\
+File path: main/database_files/features_1_df.ftr
 
 ### Feature set 2
 
 14 total features.
 126,748 molecules.
-2.48% polymorphic molecules.
+2.48% polymorphic molecules. \\
+File path: main/database_files/features_2_df.ftr
 
 ### Feature set 3
 
 14 total features.
 126,608 molecules.
-2.48% polymorphic molecules.
+2.48% polymorphic molecules. \\
+File path: main/database_files/features_3_df.ftr
 
 ### Feature set 4
 
 14 total features.
 7,231 molecules.
-37.07% polymorphic molecules.
+37.07% polymorphic molecules. \\
+File path: main/database_files/features_4_df.ftr
 
 ---
 
@@ -125,12 +129,15 @@ save_data(feature_set_results, 'full_pu_eval.pkl')
 
 ## Loading pre-calculated models
 
+Pre-calculated files: \\
+- main/database_files/full_normal_eval.pkl
+- main/database_files/full_pu_eval.pkl
 The results of the evaluation can be loaded using:
 
 ```
-algo_ensamble_summary_dict = unpack_saved_results_full_by_algo(r'C:\Users\itaro\OneDrive\Documents\GitHub\Crystal_structure\full_normal_eval.pkl')
+algo_ensamble_summary_dict = unpack_saved_results_full_by_algo('C:\Users\itaro\OneDrive\Documents\GitHub\Crystal_structure\full_normal_eval.pkl')
 algo_ensamble_summary_dict = update_ensamble_smote(algo_ensamble_summary_dict)
-algo_concv_summary_dict = unpack_saved_results_full_by_algo(r'C:\Users\itaro\OneDrive\Documents\GitHub\Crystal_structure\fset_45_normal_eval.pkl')
+algo_concv_summary_dict = unpack_saved_results_full_by_algo('C:\Users\itaro\OneDrive\Documents\GitHub\Crystal_structure\fset_45_normal_eval.pkl')
 algo_full_summary_dict = {**algo_ensamble_summary_dict, **algo_concv_summary_dict}
 us_algo_full_summary_dict = merge_eval_methods_at_feature_set_level(algo_full_summary_dict, 'ensamble', 'consensus_cv', 'combined')
 os_algo_full_summary_dict = merge_eval_methods_at_feature_set_level(algo_full_summary_dict, 'os_SMOTE', 'consensus_cv', 'combined')
